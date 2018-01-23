@@ -1,0 +1,11 @@
+{
+  "name": "samehadaku",
+  "version": "1.0.0",
+  "description": "tesbot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "tenuzholic",
+  "license": "ISC"
+}
