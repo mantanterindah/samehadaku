@@ -15,16 +15,16 @@ bot.on('ready', (message) => {
 
 			var msg = $('div.mag-box-container > ul > li:nth-child(1) a').attr('href');
 			console.log(msg);
-			if (msg!=msg) {
-				const id ="405199602497617920"
-				const channel = bot.channels.get(id);
-				channel.send(msg)
-			}
+			
+			const id ="405199602497617920"
+			const channel = bot.channels.get(id);
+			channel.send(msg)
+			
 
 
 
 			})
-	}, 30000)
+	}, 180000)
 });
 
 process.on('unhandledRejection', error => {
