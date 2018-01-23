@@ -6,7 +6,7 @@ const url = "https://www.samehadaku.net/"
 
 bot.on('ready', (message) => {
 	setInterval(() => {
-		equest(url, function(err, resp, body) {
+		request(url, function(err, resp, body) {
 			if (err) {
 				console.log(err)
 			}
