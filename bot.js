@@ -2,6 +2,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const url = "https://www.samehadaku.net/"
 
 bot.on('ready', (message) => {
 	setInterval(() => {
