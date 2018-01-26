@@ -14,17 +14,26 @@ bot.on('ready', (message) => {
 			let $ = cheerio.load(body);
 
 			var msg = $('div.mag-box-container > ul > li:nth-child(1) a').attr('href');
-			console.log(msg);
+			var judul = $('div.mag-box-container > ul > li:nth-child(1) > h3').text();
+			var gambar = $('div.mag-box-container > ul > li:nth-child(1) > a > img').attr('src');
+			console.log(msg)
+			console.log(judul)
+			console.log(gambar)
+			
+			let embed = new Discord.RichEmbed()
+				.setImage(gambar)
+				.setDescription(judul)
+				.addField(msg)
 			
 			const id ="405199602497617920"
 			const channel = bot.channels.get(id);
-			channel.send(msg)
+			channel.send(embed)
 			
 
 
 
 			})
-	}, 1800000)
+	}, 270000)
 });
 
 process.on('unhandledRejection', error => {
