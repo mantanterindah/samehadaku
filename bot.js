@@ -34,7 +34,7 @@ bot.on('ready', (message) => {
 
 
 			})
-	}, 270000)
+	}, 2700000)
 });
 
 process.on('unhandledRejection', error => {
