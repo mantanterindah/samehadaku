@@ -21,9 +21,10 @@ bot.on('ready', (message) => {
 			console.log(gambar)
 			
 			let embed = new Discord.RichEmbed()
+				.setColor("#f44277")
 				.setImage(gambar)
 				.setDescription(judul)
-				.addField(msg)
+				.addField(msg);
 			
 			const id ="405199602497617920"
 			const channel = bot.channels.get(id);
